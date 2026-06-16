@@ -164,7 +164,7 @@ if (now - lastCreation < VOICE_CREATE_COOLDOWN_MS) {
                 userLimit = Math.max(0, Math.min(99, userLimit || 0));
 
                 logger.info(`Creating temporary channel for user ${member.id} with user limit: ${userLimit}`);
-
+                
                 const existingChannels = guild.channels.cache.filter(c =>
                     c.parentId === triggerChannel.parentId &&
                     c.name.startsWith(triggerChannel.name)
