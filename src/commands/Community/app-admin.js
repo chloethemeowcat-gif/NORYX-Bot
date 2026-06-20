@@ -199,17 +199,35 @@ async function handleSetup(interaction) {
         .setLabel('Question 3 (optional)')
         .setTextInputComponent(q3Input);
 
-    const q3Label = new LabelBuilder()
+    const q4Input = new TextInputBuilder()
+        .setCustomId('app_question_3')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+    
+    const q4Label = new LabelBuilder()
         .setLabel('Question 4 (optional)')
-        .setTextInputComponent(q3Input);
+        .setTextInputComponent(q4Input);
 
-    const q3Label = new LabelBuilder()
+    const q5Input = new TextInputBuilder()
+        .setCustomId('app_question_5')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+    
+    const q5Label = new LabelBuilder()
         .setLabel('Question 5 (optional)')
-        .setTextInputComponent(q3Input);
+        .setTextInputComponent(q5Input);
 
-    const q3Label = new LabelBuilder()
+    const q6Input = new TextInputBuilder()
+        .setCustomId('app_question_6')
+        .setStyle(TextInputStyle.Short)
+        .setMaxLength(100)
+        .setRequired(false);
+    
+    const q6Label = new LabelBuilder()
         .setLabel('Question 6 (optional)')
-        .setTextInputComponent(q3Input);
+        .setTextInputComponent(q6Input);
     
     modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label);
 
