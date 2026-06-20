@@ -71,18 +71,6 @@ export const botConfig = {
       { question: "Question 10?", required: true },
       { question: "Question 11?", required: true },
       { question: "Question 12?", required: true },
-      { question: "Question 13?", required: true },
-      { question: "Question 14?", required: true },
-      { question: "Question 15?", required: true },
-      { question: "Question 16?", required: true },
-      { question: "Question 17?", required: true },
-      { question: "Question 18?", required: true },
-      { question: "Question 19?", required: true },
-      { question: "Question 20?", required: true },
-      { question: "Question 21?", required: true },
-      { question: "Question 22?", required: true },
-      { question: "Question 23?", required: true },
-      { question: "Question 24?", required: true },
     ],
 
     // Embed colors by application status.
