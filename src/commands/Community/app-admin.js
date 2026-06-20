@@ -199,6 +199,18 @@ async function handleSetup(interaction) {
         .setLabel('Question 3 (optional)')
         .setTextInputComponent(q3Input);
 
+    const q3Label = new LabelBuilder()
+        .setLabel('Question 4 (optional)')
+        .setTextInputComponent(q3Input);
+
+    const q3Label = new LabelBuilder()
+        .setLabel('Question 5 (optional)')
+        .setTextInputComponent(q3Input);
+
+    const q3Label = new LabelBuilder()
+        .setLabel('Question 6 (optional)')
+        .setTextInputComponent(q3Input);
+    
     modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label);
 
     await interaction.showModal(modal);
