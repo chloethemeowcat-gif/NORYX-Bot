@@ -198,38 +198,8 @@ async function handleSetup(interaction) {
     const q3Label = new LabelBuilder()
         .setLabel('Question 3 (optional)')
         .setTextInputComponent(q3Input);
-
-    const q4Input = new TextInputBuilder()
-        .setCustomId('app_question_4')
-        .setStyle(TextInputStyle.Short)
-        .setMaxLength(100)
-        .setRequired(false);
-
-    const q4Label = new LabelBuilder()
-        .setLabel('Question 4 (optional)')
-        .setTextInputComponent(q4Input);
-
-    const q5Input = new TextInputBuilder()
-        .setCustomId('app_question_5')
-        .setStyle(TextInputStyle.Short)
-        .setMaxLength(100)
-        .setRequired(false);
-
-    const q5Label = new LabelBuilder()
-        .setLabel('Question 5 (optional)')
-        .setTextInputComponent(q5Input);
-
-    const q6Input = new TextInputBuilder()
-        .setCustomId('app_question_6')
-        .setStyle(TextInputStyle.Short)
-        .setMaxLength(100)
-        .setRequired(false);
-
-    const q6Label = new LabelBuilder()
-        .setLabel('Question 6 (optional)')
-        .setTextInputComponent(q6Input);
     
-    modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label, q4Label, q5Label, q6Label);
+    modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label);
 
     await interaction.showModal(modal);
 
@@ -258,9 +228,6 @@ async function handleSetup(interaction) {
         submitted.fields.getTextInputValue('app_question_1').trim(),
         submitted.fields.getTextInputValue('app_question_2').trim(),
         submitted.fields.getTextInputValue('app_question_3').trim(),
-        submitted.fields.getTextInputValue('app_question_4').trim(),
-        submitted.fields.getTextInputValue('app_question_5').trim(),
-        submitted.fields.getTextInputValue('app_question_6').trim(),
     ].filter(q => q.length > 0);
 
     const role = await interaction.guild.roles.fetch(roleId).catch(() => null);
