@@ -59,9 +59,30 @@ export const botConfig = {
   applications: {
     // Default questions shown when someone fills out an application.
     defaultQuestions: [
-      { question: "What is your name?", required: true },
-      { question: "How old are you?", required: true },
-      { question: "Why do you want to join?", required: true },
+      { question: "Question 1?", required: true },
+      { question: "Question 2?", required: true },
+      { question: "Question 3?", required: true },
+      { question: "Question 4?", required: true },
+      { question: "Question 5?", required: true },
+      { question: "Question 6?", required: true },
+      { question: "Question 7?", required: true },
+      { question: "Question 8?", required: true },
+      { question: "Question 9?", required: true },
+      { question: "Question 10?", required: true },
+      { question: "Question 11?", required: true },
+      { question: "Question 12?", required: true },
+      { question: "Question 13?", required: true },
+      { question: "Question 14?", required: true },
+      { question: "Question 15?", required: true },
+      { question: "Question 16?", required: true },
+      { question: "Question 17?", required: true },
+      { question: "Question 18?", required: true },
+      { question: "Question 19?", required: true },
+      { question: "Question 20?", required: true },
+      { question: "Question 21?", required: true },
+      { question: "Question 22?", required: true },
+      { question: "Question 23?", required: true },
+      { question: "Question 24?", required: true },
     ],
 
     // Embed colors by application status.
