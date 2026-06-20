@@ -200,7 +200,7 @@ async function handleSetup(interaction) {
         .setTextInputComponent(q3Input);
 
     const q4Input = new TextInputBuilder()
-        .setCustomId('app_question_3')
+        .setCustomId('app_question_4')
         .setStyle(TextInputStyle.Short)
         .setMaxLength(100)
         .setRequired(false);
@@ -261,24 +261,6 @@ async function handleSetup(interaction) {
         submitted.fields.getTextInputValue('app_question_4').trim(),
         submitted.fields.getTextInputValue('app_question_5').trim(),
         submitted.fields.getTextInputValue('app_question_6').trim(),
-        submitted.fields.getTextInputValue('app_question_7').trim(),
-        submitted.fields.getTextInputValue('app_question_8').trim(),
-        submitted.fields.getTextInputValue('app_question_9').trim(),
-        submitted.fields.getTextInputValue('app_question_10').trim(),
-        submitted.fields.getTextInputValue('app_question_11').trim(),
-        submitted.fields.getTextInputValue('app_question_12').trim(),
-        submitted.fields.getTextInputValue('app_question_13').trim(),
-        submitted.fields.getTextInputValue('app_question_14').trim(),
-        submitted.fields.getTextInputValue('app_question_15').trim(),
-        submitted.fields.getTextInputValue('app_question_16').trim(),
-        submitted.fields.getTextInputValue('app_question_17').trim(),
-        submitted.fields.getTextInputValue('app_question_18').trim(),
-        submitted.fields.getTextInputValue('app_question_19').trim(),
-        submitted.fields.getTextInputValue('app_question_20').trim(),
-        submitted.fields.getTextInputValue('app_question_21').trim(),
-        submitted.fields.getTextInputValue('app_question_22').trim(),
-        submitted.fields.getTextInputValue('app_question_23').trim(),
-        submitted.fields.getTextInputValue('app_question_24').trim(),
     ].filter(q => q.length > 0);
 
     const role = await interaction.guild.roles.fetch(roleId).catch(() => null);
