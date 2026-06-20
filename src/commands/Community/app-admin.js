@@ -204,7 +204,7 @@ async function handleSetup(interaction) {
         .setStyle(TextInputStyle.Short)
         .setMaxLength(100)
         .setRequired(false);
-    
+
     const q4Label = new LabelBuilder()
         .setLabel('Question 4 (optional)')
         .setTextInputComponent(q4Input);
@@ -214,7 +214,7 @@ async function handleSetup(interaction) {
         .setStyle(TextInputStyle.Short)
         .setMaxLength(100)
         .setRequired(false);
-    
+
     const q5Label = new LabelBuilder()
         .setLabel('Question 5 (optional)')
         .setTextInputComponent(q5Input);
@@ -224,12 +224,12 @@ async function handleSetup(interaction) {
         .setStyle(TextInputStyle.Short)
         .setMaxLength(100)
         .setRequired(false);
-    
+
     const q6Label = new LabelBuilder()
         .setLabel('Question 6 (optional)')
         .setTextInputComponent(q6Input);
     
-    modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label);
+    modal.addLabelComponents(roleLabel, appNameLabel, q1Label, q2Label, q3Label, q4Label, q5Label, q6Label);
 
     await interaction.showModal(modal);
 
